@@ -2,9 +2,9 @@ const scroll = () => {
   seamless.polyfill();
 
   const links = document.querySelectorAll(".header-menu__item a");
-  const details = document.querySelector(".card-details__link-characteristics");
+  const linkCharacteristics = document.querySelector(".card-details__link-characteristics");
 
-  const allLinks = [...links, details];
+  const allLinks = [...links, linkCharacteristics];
 
   allLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
